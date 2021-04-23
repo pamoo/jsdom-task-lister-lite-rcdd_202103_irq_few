@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
   let d = new Date();
-  document.getElementById("date").innerHTML = d.getFullYear()+"/"+(d.getMonth() + 1)+"/"+d.getDate();
+  // document.getElementById("date").innerHTML = d.getFullYear()+"/"+(d.getMonth() + 1)+"/"+d.getDate();
 
   //creating a list after clicking on add
   function newElement() {
