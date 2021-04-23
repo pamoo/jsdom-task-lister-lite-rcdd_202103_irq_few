@@ -1,14 +1,14 @@
 document.addEventListener("DOMContentLoaded", () => {
-  let d = new Date();
-  // document.getElementById("date").innerHTML = d.getFullYear()+"/"+(d.getMonth() + 1)+"/"+d.getDate();
-
-  //creating a list after clicking on add
-  function newElement() {
-      let li = document.createElement("li");
-      let inputValue = document.getElementById("txtinput").value;
-      let txtnode = document.createTextNode(inputValue);
-      li.appendChild(txtnode);
-        document.getElementById("todolist").appendChild(li);
-        document.getElementById("txtinput").value = "";
-    }
+  // your code here
+  const inputText = document.getElementById('new-task-description');
+  const form = document.getElementById('create-task-form');
+  const listDiv = document.getElementById('list');
+  const taskUL = document.getElementById('tasks')
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    let inputTextValue = inputText.value;
+    let li = document.createElement('li');
+    li.innerText = inputTextValue;
+    taskUL.append(li);
+  });
 });
