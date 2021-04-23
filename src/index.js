@@ -2,8 +2,8 @@ document.addEventListener("DOMContentLoaded", () => {
   // your code here
   const tasks = document.getElementById('new-task-description');
   const form = document.getElementById('create-task-form');
-  const listDiv = document.getElementById('list');
-  const taskUL = document.getElementById('tasks')
+  const list = document.getElementById('list');
+  const task = document.getElementById('tasks')
   form.addEventListener('submit', (e) => {
     e.preventDefault();
     let inputTextValue = tasks.value;
