@@ -9,6 +9,6 @@ document.addEventListener("DOMContentLoaded", () => {
     let inputTextValue = inputtasks.value;
     let li = document.createElement('li');
     li.innerText = inputTextValue;
-    taskUL.append(li);
+    task.append(li);
   });
 });
