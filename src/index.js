@@ -6,9 +6,9 @@ document.addEventListener("DOMContentLoaded", () => {
   const task = document.getElementById('tasks')
   form.addEventListener('submit', (e) => {
     e.preventDefault();
-    let inputTextValue = inputtasks.value;
+    let inputText = inputtasks.value;
     let li = document.createElement('li');
-    li.innerText = inputTextValue;
+    li.innerText = inputText;
     task.append(li);
   });
 });
